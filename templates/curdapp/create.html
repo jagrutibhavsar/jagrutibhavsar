@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{%extends 'curdapp/base.html'%}
+{%block base_block%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 align="center">Employee create form</h1>
+<hr>
+<div class="container" align="center">
+    <form method="POST">
+{{form.as_p}}
+{%csrf_token%}
+    <input type="submit" class="btn btn-success btn-lg" value="Create Record">
+        </form>
+    </div>
+{%endblock%}
+
+</body>
+
+</html>
